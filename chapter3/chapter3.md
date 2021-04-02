@@ -14,14 +14,14 @@
 |---|:---:|---|
 |int|angel|1004;|
 
-앞에 한정자, 제한자(Qualifier)를 덧붙여 쓸 수 있으며, 변수를 **기호적 상수**(Symbolic constant) 라고 하기도 한다.
+앞에 한정자, 제한자(Qualifier)를 덧붙여 쓸 수 있으며, 변수를 **기호적 상수**(Symbolic constant) 라고 하기도 한다. (예: `const`)
 
 | 한정자, 제한자 | 자료형 | 기호적 상수 | 리터럴 상수 |
 |:---|---|:---:|---|
 |const|int|angel|1004;|
 
 ## 3.3 scanf()
-콘솔로 부터 사용자의 입력을 받아 변수에 저장할 때 사용한다. `scanf()` 를 통해 받아온 값을 `&`(ampersand) 를 붙인 변수에 저장한다.
+콘솔로 부터 사용자의 입력을 받아 변수에 저장할 때 사용한다. `scanf()` 를 통해 받아온 값을 `&`(ampersand) 를 붙인 변수에 저장한다. (그냥 and 라고 읽는 사람도 있지만 정식명식은 엠펄샌드)
 
 ```c
 int i = 0;
@@ -43,6 +43,9 @@ printf("Input two integers\n");
 scanf("%d%d", &i, &j); // 띄어쓰기 없어도 됨에 유의
 printf("Your numbers are &d &d\n, i, j);
 ```
+
+- 터미널에 입력을 할 때, **띄어쓰기나 줄바꿈**으로 입력 값이 구분된다. 
+
 ::: tip TODO
 `printf()` 와 `scanf()` 에 들어갈 수 있는 모든 형식 지정자 format specifier (예 : %d) 를 찾아보도록 하자.
 :::
